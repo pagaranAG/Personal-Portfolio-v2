@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react'
 
 const skills = [
-  { name: 'Python', icon: 'python.svg', type: 'language' },
-  { name: 'SQL', icon: 'sql.svg', type: 'data' },
-  { name: 'HTML', icon: 'html.svg', type: 'web' },
-  { name: 'CSS', icon: 'css.svg', type: 'web' },
-  { name: 'Git', icon: 'git.svg', type: 'tool' },
-  { name: 'JavaScript', icon: 'javascript.svg', type: 'language' },
-  { name: 'React', icon: 'react.svg', type: 'framework' },
-  { name: 'Node.js', icon: 'node.svg', type: 'runtime' },
-  { name: 'MongoDB', icon: 'mongodb.svg', type: 'data' },
+  { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg', type: 'language' },
+  { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg', type: 'data' },
+  { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg', type: 'web' },
+  { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg', type: 'web' },
+  { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg', type: 'tool' },
+  { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg', type: 'language' },
+  { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg', type: 'framework' },
+  { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg', type: 'runtime' },
+  { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg', type: 'data' },
 ]
 
 const contacts = [
@@ -98,7 +98,7 @@ function App() {
             <div className="skills-list">
               {skills.map((skill, index) => (
                 <div className="skill-item" key={skill.name} style={{ '--item-index': index }}>
-                  <img src={`/icons/${skill.icon}`} alt="" />
+                  <img src={skill.icon} alt={`${skill.name} icon`} />
                   <span>{skill.name}</span>
                   <small>{skill.type}</small>
                 </div>
