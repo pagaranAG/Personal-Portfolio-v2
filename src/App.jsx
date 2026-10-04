@@ -13,9 +13,9 @@ const skills = [
 ]
 
 const contacts = [
-  { label: 'Facebook', href: 'https://www.facebook.com/agxp930/', handle: '@agxp930' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/adrienne-ghabriel-xander-pagaran-050373423/?isSelfProfile=true', handle: 'adrienne-pagaran' },
-  { label: 'GitHub', href: 'https://github.com/pagaranAG', handle: 'pagaranAG' },
+  { label: 'Facebook', href: 'https://www.facebook.com/agxp930/', },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/adrienne-ghabriel-xander-pagaran-050373423/?isSelfProfile=true',  },
+  { label: 'GitHub', href: 'https://github.com/pagaranAG',  },
 ]
 
 function App() {
