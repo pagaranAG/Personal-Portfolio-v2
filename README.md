@@ -23,11 +23,12 @@ npm run build
 
 ## Deploy to GitHub Pages
 
-The production build uses relative asset paths, so it works when GitHub Pages
-serves this repository from `/Personal-Portfolio-v2/`.
+The production build uses relative asset paths and is written to `docs/`, which
+matches the repository's GitHub Pages source configuration.
 
 ```bash
-npm run deploy
+npm run build
 ```
 
-Then configure the repository's Pages source as the `gh-pages` branch.
+Commit the generated `docs/` directory and push it to `main`. GitHub Pages will
+then publish the contents of that directory.
